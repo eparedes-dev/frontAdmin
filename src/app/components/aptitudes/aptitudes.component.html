@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitudes</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Aptitud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let aptitud of aptitudes, let i = index">
+              <th scope="row">{{i+1}}</th>
+              <td>{{ aptitud.apt }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
+
