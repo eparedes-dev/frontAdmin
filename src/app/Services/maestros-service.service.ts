@@ -4,11 +4,11 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class AptitudesServiceService {
+export class MaestrosServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getApt(){
-    return this.http.get('http://localhost:3000/aptitudes');
+  getMto(){
+    return this.http.get('http://localhost:3000/maestros');
   }
 }

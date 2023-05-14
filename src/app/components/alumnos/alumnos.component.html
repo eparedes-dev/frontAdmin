@@ -1,1 +1,29 @@
-<p>alumnos works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitudes</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Materia</th>
+              <th>Actitud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let alumno of alumnos">
+              <th scope="row">{{ alumno.idalumno }}</th>
+              <td>{{ alumno.nombre }}</td>
+              <td>{{ alumno.materia }}</td>
+              <td>{{ alumno.actitud }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
+

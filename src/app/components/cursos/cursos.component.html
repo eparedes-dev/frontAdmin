@@ -1,1 +1,28 @@
-<p>cursos works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitudes</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Materia</th>
+              <th>Maestro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let curso of cursos">
+              <th scope="row">{{ curso.idcurso }}</th>
+              <td>{{ curso.materia }}</td>
+              <td>{{ curso.maestro }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
+
+

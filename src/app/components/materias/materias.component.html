@@ -1,1 +1,25 @@
-<p>materias works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Materias</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Materia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let materia of materias">
+              <th scope="row">{{ materia.idmateria }}</th>
+              <td>{{ materia.tema }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
+

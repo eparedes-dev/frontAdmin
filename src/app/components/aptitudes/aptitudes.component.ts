@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AptitudesServiceService } from 'src/app/Services/aptitudes-service.service';
 
 interface  Aptitud {
-  id: number;
+  idaptitud: number;
   apt: string;
 }
 

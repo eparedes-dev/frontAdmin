@@ -1,1 +1,25 @@
-<p>actitudes works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Actitudes</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Actitud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let actitud of actitudes, let i = index">
+              <th scope="row">{{ actitud.idactitud }}</th>
+              <td>{{ actitud.act }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
+

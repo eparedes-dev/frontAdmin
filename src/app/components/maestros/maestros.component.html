@@ -1,1 +1,29 @@
-<p>maestros works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aptitudes</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Materia</th>
+              <th>Aptitud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let maestro of maestros">
+              <th scope="row">{{ maestro.idmaestro }}</th>
+              <td>{{ maestro.nombre }}</td>
+              <td>{{ maestro.materia }}</td>
+              <td>{{ maestro.aptitud }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
+
